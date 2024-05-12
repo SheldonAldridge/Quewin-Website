@@ -13,22 +13,27 @@
 <body>
     <header>
     <div id="navbar">
-        <div class="burg-container">
-            <img :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu">
-            <img :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide">
-        </div>
-        <ul class = "nav">
+        <div id="burg-container" :class="{'burg-container': BurgPadding}">
+            <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
+            <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
+        
+        
+       
+        <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
+           
            <li class="nav-item">
-            <a href="" class="nav-link active">{{objectNav.home}}</a>
+            <a href="#" class="nav-link" id="home">{{objectNav.home}}</a>
            </li> 
            <li class="nav-item">
-            <a href="" class="nav-link active">{{objectNav.aboutMe}}</a>
+            <a href="#" class="nav-link">{{objectNav.aboutMe}}</a>
            </li>
            <li class="nav-item">
-            <a href="" class="nav-link active">{{objectNav.mywork}}</a>
+            <a href="#" class="nav-link">{{objectNav.mywork}}</a>
            </li>
         </ul>
     </div>
+        
+    
     </header>
 
 </body>

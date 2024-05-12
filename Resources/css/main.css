@@ -13,11 +13,16 @@ body{
     --Crayolas-Gold: #DFC18A;
 }
 
+/*Nav Menu*/
+.burg-container{
+    padding-bottom: 1em;
+}
+
 .nav{
     display:block !important;
 }
 
-.burg-container{
+#burg-container{
     background-color: var(--Crayolas-Outer-Space);
 }
 
@@ -27,7 +32,41 @@ body{
 }
 
 #burg-menu-slide{
+    transition: transform 0.5s ease;
     width: 20%;
-    display: none;
     filter: invert(41%) sepia(20%) saturate(3167%) hue-rotate(186deg) brightness(97%) contrast(94%);
 }
+
+.nav-item{
+    position: relative !important;
+    z-index:1 !important;
+}
+.nav-item a{
+    color: var(--Alizarin-Crimson) !important;
+}
+
+/*Burger Menu Animations*/
+
+.slide-in-animate{
+    animation: slideIn 0.3s  1 ease;
+}
+
+.slide-down-animate{
+    animation: slidedown 0.3s 1 ease;
+}
+
+@keyframes slideIn {
+    0%{transform: translateX(0);}
+    25%{transform: translateX(10%);}
+    50%{transform: translateX(0);}
+    75%{transform: translateX(5%);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes slidedown{
+    0%{transform: translateY(-20%); opacity: 0;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+/*Burger Menu Animations*/
+
+/*Nav Menu*/
