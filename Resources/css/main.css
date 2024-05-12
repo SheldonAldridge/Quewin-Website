@@ -13,3 +13,21 @@ body{
     --Crayolas-Gold: #DFC18A;
 }
 
+.nav{
+    display:block !important;
+}
+
+.burg-container{
+    background-color: var(--Crayolas-Outer-Space);
+}
+
+#burg-menu{
+    width: 20%;
+    filter: invert(80%) sepia(78%) saturate(2451%) hue-rotate(337deg) brightness(103%) contrast(99%);
+}
+
+#burg-menu-slide{
+    width: 20%;
+    display: none;
+    filter: invert(41%) sepia(20%) saturate(3167%) hue-rotate(186deg) brightness(97%) contrast(94%);
+}
