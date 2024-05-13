@@ -81,7 +81,7 @@ nav.mount('#nav')
 const smokeVideo = Vue.createApp({
    data(){
       return{
-         videosource: '/Resources/Videos/vecteezy_slow-motion-of-white-smoke-fog-mist-vapor-on-a-black_17111436.mp4'
+         videosource: '../Resources/Videos/vecteezy_slow-motion-of-white-smoke-fog-mist-vapor-on-a-black_17111436.mp4'
       }
    }
 });
