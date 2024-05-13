@@ -1,4 +1,4 @@
-const navbar = Vue.createApp({
+const burgNavbar = Vue.createApp({
    data(){
       return{
          objectNav: {
@@ -56,4 +56,34 @@ const navbar = Vue.createApp({
 
 });
 
-navbar.mount('#navbar')
+burgNavbar.mount('#burger-nav')
+
+const nav = Vue.createApp({
+   data(){
+      return{
+         listNavObj: {
+            portfolio: 'Portfolio',
+            aboutMe: 'About Me',
+            ContactMe: 'Contact Me'
+         },
+
+         nameTitleObj: {
+            firstName: 'Quewin',
+            lastName: 'Surname'
+         }
+      }
+   }
+});
+
+nav.mount('#nav')
+
+
+const smokeVideo = Vue.createApp({
+   data(){
+      return{
+         videosource: '/Resources/Videos/vecteezy_slow-motion-of-white-smoke-fog-mist-vapor-on-a-black_17111436.mp4'
+      }
+   }
+});
+
+smokeVideo.mount('#smoke-container');
