@@ -69,12 +69,12 @@ const nav = Vue.createApp({
 
          nameTitleObj: {
             firstName: 'Quewin',
-            lastName: 'Surname'
+            lastName: 'Fortune'
          }
       }
    }
 });
 
-nav.mount('#nav')
+nav.mount('#nav');
 
 

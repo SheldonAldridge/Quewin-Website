@@ -89,51 +89,57 @@ body{
 }
 /*Burger Menu Animations*/
 
-/*Burger Nav Menu*/
 
-/*Nav list Items*/
-#nav h5{
+/*Burger Nav Menu*/
+#nameHeader{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nameHeader h5{
     color: var(--Ripe-Mango);
     margin: 10px;
+    font-family: 'onePiece' !important;
 }
+/*Burger Nav Menu*/
 
-.nav{
-    width: 100%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
-    margin: 0;
+/*Grid Gallery Mobile*/
+#portfolio h5{
     text-align: center;
-    z-index: 3 !important;
-}
-
-.nav-link h5{
-    color: var(--Alizarin-Crimson) !important;
-    font-size: 50px;
+    color: var(--Crayolas-Gold);
     
 }
 
-#smoke-container video{
-    position: absolute;
+.row{
+    display: block !important;
+    --bs-gutter-x: 0 !important;
+    padding-left: 0 !important;
+}
+
+.row>*{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.column-one,.column-two,.column-three,.column-four{
+    max-width: 100%;
+}
+
+.column-one img,.column-two img,.column-three img,.column-four img,.column-five img,.column-six img{
     width: 100%;
-    height: 100%;
+    padding-bottom: 10px;
+}
+
+.column-two img,.column-four img{
+    width:100%;
+    height:100%;
     object-fit: cover;
-    animation: smokeFade 15s infinite linear;
-   
 }
 
-@keyframes smokeFade {
-    0%{opacity: 0;}
-
-    25%{opacity: 0;}
-
-    50%{opacity: 0.3;}
-
-    90%{opacity: 0;}
-
-    100%{opacity: 0;}
+.column-two,.column-four,.column-six{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 10px;
 }
 
-/*Nav list Items*/
+/*Grid Gallery Mobile*/
