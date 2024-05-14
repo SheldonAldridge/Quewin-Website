@@ -1,8 +1,10 @@
+
+
 body{
     margin: 0;
     box-sizing: border-box;
     background-color: var(--Crayolas-Outer-Space) !important;
-    font-family: 'onePiece', sans-serif !important;
+    
 }
 
 /*Luffy colour scheme*/
@@ -17,7 +19,7 @@ body{
 
 @font-face {
     font-family: 'onePiece';
-    src: url('./Resources/fonts/One_Piece_Font/one_piece_font.ttf');
+    src: url('./Resources/fonts/ONE_PIECE/one-piece-font.ttf');
 }
 
 /*Burger Nav Menu*/
@@ -102,11 +104,13 @@ body{
     padding: 0;
     margin: 0;
     text-align: center;
+    z-index: 3 !important;
 }
 
 .nav-link h5{
     color: var(--Alizarin-Crimson) !important;
     font-size: 50px;
+    font-family: 'onePiece' !important;
 }
 
 #smoke-container video{
@@ -115,6 +119,7 @@ body{
     height: 100%;
     object-fit: cover;
     animation: smokeFade 30s infinite linear;
+   
 }
 
 @keyframes smokeFade {
