@@ -17,7 +17,7 @@ body{
 
 @font-face {
     font-family: 'onePiece';
-    src: url("/Resources/fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
+    src: url("./Resources/fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
 }
 
 #nav h5,nav-item h5{
@@ -25,36 +25,39 @@ body{
 }
 
 /*Burger Nav Menu*/
-#burger-nav{
-    display: none !important;
+
+#burg-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
 }
 
-.burg-container{
-    padding-bottom: 1em;
+#burg-container h5{
+    margin: 0 auto;
 }
 
 .nav{
     display:block !important;
 }
 
-#burg-container{
-    background-color: var(--Crayolas-Outer-Space);
+#burger-nav{
+    background-color: var(--Crayolas-Gold);
 }
 
 #burg-menu,#burg-menu-slide{
+    width: 10%;
     margin: 1em;
-    
 }
 
 #burg-menu{
     
-    filter: invert(80%) sepia(78%) saturate(2451%) hue-rotate(337deg) brightness(103%) contrast(99%);
+    filter: invert(80%) sepia(78%) saturate(2451%) hue-rotate(337deg) brightness(30%) contrast(99%);
 }
 
 #burg-menu-slide{
     transition: transform 0.5s ease;
-    width: 20%;
-    filter: invert(41%) sepia(20%) saturate(3167%) hue-rotate(186deg) brightness(97%) contrast(94%);
+    filter: invert(24%) sepia(96%) saturate(1919%) hue-rotate(337deg) brightness(93%) contrast(99%)
 }
 
 .nav-item{
@@ -62,7 +65,7 @@ body{
     z-index:1 !important;
 }
 .nav-item a{
-    color: var(--Alizarin-Crimson) !important;
+    color: var(--Crayolas-Outer-Space) !important;
 }
 
 /*Burger Menu Animations*/
@@ -107,7 +110,6 @@ body{
 #portfolio h5{
     text-align: center;
     color: var(--Crayolas-Gold);
-    
 }
 
 .row{
@@ -116,30 +118,20 @@ body{
     padding-left: 0 !important;
 }
 
-.row>*{
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
 
-.column-one,.column-two,.column-three,.column-four{
+.column{
     max-width: 100%;
-}
-
-.column-one img,.column-two img,.column-three img,.column-four img,.column-five img,.column-six img{
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.column-two img,.column-four img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-}
-
-.column-two,.column-four,.column-six{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-gap: 10px;
 }
+
+.column img,.column-one img{
+    width: 100%;
+    height: 194px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
 
 /*Grid Gallery Mobile*/
