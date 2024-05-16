@@ -2,7 +2,7 @@ const nav = Vue.createApp({
    data(){
       return{
          listNavObj: {
-            home: 'Portfolio',
+            portfolio: 'Portfolio',
             aboutMe: 'About Me',
             ContactMe: 'Contact Me'
          },

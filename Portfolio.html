@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./Resources/css/portfolio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script  src="./Resources/Js/portfolio.js" defer></script>
+
+    <script type="module" src="./Resources/Js/portfolio.js" defer></script>
     <script src="https://unpkg.com/vue@3"></script>
     <title>Portfolio Page</title>
 
 </head>
 <body>
-    <header>
     <div class="navbar" id="burger-nav">
 
-        
         <div id="burg-container" :class="{'burg-container': BurgPadding}">
             <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
             <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
             <h5 class="display-6">{{projectPage.title}}</h5>
         </div>
-       
 
-        
-        
+       <div id="navFlex">
         <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
-           
            <li class="nav-item">
             <a href="#" class="nav-link">{{listNavObj.home}}</a>
            </li> 
@@ -39,31 +36,40 @@
            </li>
         </ul>
 
-        <ul class = "nav" id="" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
-           
-            <li class="nav-item" id="">
-             <a href="#" class="nav-link">{{projectTitleObj.digitalArt}}</a>
+        <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
+
+            <li class="nav-item">
+             <a @click="toggleDigArt" class="nav-link">{{projectTitleObj.digitalArt}}</a>
             </li> 
  
             <li class="nav-item">
-             <a href="#" class="nav-link">{{projectTitleObj.traditionalArt}}</a>
+             <a @click="toggleTradArt" class="nav-link" >{{projectTitleObj.traditionalArt}}</a>
             </li>
  
             <li class="nav-item">
-             <a href="#" class="nav-link">{{projectTitleObj.animation}}</a>
+             <a class="nav-link">{{projectTitleObj.animation}}</a>
             </li>
          </ul>
+    </div>
+
+        <main>
+         <div class="row">
+                <div v-for="(images, index) in digitalArt" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 1}" v-if="ShowDigArt">
+                    <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt" class="dig-image-transition">
+                </div>
+            
+                <div v-for="(images, index) in traditionalArt" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 2}" :id = "'artWork'" v-if="ShowTradArt">
+                    <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt" class="dig-image-transition">
+                </div>
+        </div>
+    </main>
 
     </div>
-    </header>
 
-   
 
-    <main>
-        <div class="row" id="portfolio">
-            <div v-for="(images, index) in imageGroups" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 1}">
-                <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt">
-            </div>
-    </main>
+
+        
+
+
 </body>
 </html>
