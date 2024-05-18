@@ -31,7 +31,7 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: row;
-    background-color: var(--Crayolas-Gold);
+    background-color: var( --Alizarin-Crimson);
 }
 
 #navFlex{
@@ -51,7 +51,7 @@ body{
 
 .nav{
     display:block !important;
-    background-color: var(--Crayolas-Gold);
+    background-color: var(--Alizarin-Crimson);
     width: 100%;
 }
 
@@ -71,7 +71,7 @@ body{
 
 #burg-menu-slide{
     transition: transform 0.5s ease;
-    filter: invert(24%) sepia(96%) saturate(1919%) hue-rotate(337deg) brightness(93%) contrast(99%)
+    filter: invert(44%) sepia(53%) saturate(4382%) hue-rotate(202deg) brightness(90%) contrast(90%);
 }
 
 .nav-item{
