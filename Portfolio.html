@@ -14,7 +14,6 @@
 </head>
 <body>
     <div class="navbar" id="burger-nav">
-
         <div id="burg-container" :class="{'burg-container': BurgPadding}">
             <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
             <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
@@ -24,7 +23,7 @@
        <div id="navFlex">
         <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
            <li class="nav-item">
-            <a href="#" class="nav-link">{{listNavObj.home}}</a>
+            <a href="./index.html" class="nav-link">{{listNavObj.home}}</a>
         </li> 
 
            <li class="nav-item">
@@ -66,10 +65,9 @@
 
     </div>
 
-
-
-        
-
+    <div class="container" id="canvas">
+        {titleObj.firstName}
+    </div>
 
 </body>
 </html>

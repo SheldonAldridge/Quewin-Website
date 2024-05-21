@@ -1,41 +1,39 @@
 const nav = Vue.createApp({
    data(){
       return{
+
+         objectNav: {
+            burgerMen:'./Resources/Images/Navbar/Burger-Menu.svg',
+            burgerMenSlide:'./Resources/Images/Navbar/Burger-Menu-Slide.svg',
+           },
+
          listNavObj: {
             portfolio: 'Portfolio',
             aboutMe: 'About Me',
             ContactMe: 'Contact Me'
          },
+          //Toggle Burger Menu Images
+         ShowBurgerMen: true,
+         ShowBurgerMenSlide: false,
+         ShowMenuList: false,
 
-         nameTitleObj: {
-            firstName: 'Quewin',
-            lastName: 'Fortune'
-         }
+         //Toggle padding
+         BurgPadding: false,
+
+         //burger Slide Menu animation
+         slideIn: true,
+
+         //Menu list slide down animation
+         slideDown: true,
       }
    },
 
-    //Toggle Burger Menu Images
-    ShowBurgerMen: true,
-    ShowBurgerMenSlide: false,
-    ShowMenuList: false,
-
-    //Toggle padding
-    BurgPadding: false,
-
-    //burger Slide Menu animation
-    slideIn: true,
-
-    //Menu list slide down animation
-    slideDown: true,
-
-    ShowDigArt: true,
-
-    methods:{
+   methods:{
       toggleBurger() {
          this.ShowBurgerMen = !this.ShowBurgerMen,
          this.ShowBurgerMenSlide = !this.ShowBurgerMenSlide,
          this.ShowMenuList = !this.ShowMenuList,
-         this.BurgPadding = !this.BurgPadding
+         this.BurgPadding  = !this.BurgPadding
       },
 
       toggleBurgerSlide() {
@@ -51,20 +49,22 @@ const nav = Vue.createApp({
       toggleSlideDown(){
          this.slideDown = !this.slideDown
       },
+   },
 
-      toggleDigArt() {
-        this.ShowDigArt = true,
-        this.ShowTradArt = false
-      },
+    
+});
 
-      toggleTradArt() {
-        this.ShowDigArt = false,
-        this.ShowTradArt = true
-      },
+nav.mount('#burger-nav');
 
+const canvas = Vue.createApp({
+   data(){
+      return{
+         titleObj:{
+            firstName: "Quewin",
+            lastName: "Fortune"
+         },
+      }
    },
 });
 
-nav.mount('#nav');
-
-
+canvas.mount('#canvas')

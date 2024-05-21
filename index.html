@@ -18,13 +18,11 @@
             <div id="burg-container" :class="{'burg-container': BurgPadding}">
                 <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
                 <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
-                <h5 class="display-6">{{projectPage.title}}</h5>
             </div>
     
-           <div id="navFlex">
-            <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
+            <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}" id="menu-List">
                <li class="nav-item">
-                <a href="#" class="nav-link">{{listNavObj.home}}</a>
+                <a href="./Portfolio.html" class="nav-link">{{listNavObj.portfolio}}</a>
             </li> 
     
                <li class="nav-item">
@@ -35,11 +33,21 @@
                 <a href="#" class="nav-link">{{listNavObj.ContactMe}}</a>
                </li>
             </ul>
-    
-           
-            </div>
+            
         </div>
     </nav>
+
+    <div class="container" id="canvas">
+       <div id="title">
+        <div class="f-name">
+            {{titleObj.firstName}}
+        </div>
+        <div class="h-line"></div>
+        <div class="l-name">
+            {{titleObj.lastName}}
+        </div>
+       </div> 
+    </div>
 
 </body>
 </html>
