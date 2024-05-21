@@ -11,30 +11,35 @@
 
 </head>
 <body>
-    <main>
-        <div class="container-fluid" id="nav">
-            <h5 class="display-6">{{nameTitleObj.firstName}} {{nameTitleObj.lastName}}</h5>
 
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="./Portfolio.html" class="nav-link"><h5 class="display-1">{{listNavObj.portfolio}}</h5></a>
-                </li>
+    <nav>
+        <div class="navbar" id="burger-nav">
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><h5 class="display-1">{{listNavObj.aboutMe}}</h5></a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link"><h5 class="display-1">{{listNavObj.ContactMe}}</h5></a>
-                </li>
+            <div id="burg-container" :class="{'burg-container': BurgPadding}">
+                <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
+                <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
+                <h5 class="display-6">{{projectPage.title}}</h5>
+            </div>
+    
+           <div id="navFlex">
+            <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
+               <li class="nav-item">
+                <a href="#" class="nav-link">{{listNavObj.home}}</a>
+            </li> 
+    
+               <li class="nav-item">
+                <a href="#" class="nav-link">{{listNavObj.aboutMe}}</a>
+               </li>
+    
+               <li class="nav-item">
+                <a href="#" class="nav-link">{{listNavObj.ContactMe}}</a>
+               </li>
             </ul>
+    
+           
+            </div>
         </div>
-    </main>
+    </nav>
 
-    <section>
-        <div id="smoke-container">
-            <video src="./Resources/Videos/vecteezy_slow-motion-of-white-smoke-fog-mist-vapor-on-a-black_17111436.mp4" autoplay loop ></video>
-        </div>
-    </section>
 </body>
 </html>

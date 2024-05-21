@@ -31,7 +31,11 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: row;
-    background-color: var( --Alizarin-Crimson);
+   
+}
+
+#burg-container,.nav{
+    background-color: var(--Crayolas-Gold);
 }
 
 #navFlex{
@@ -46,12 +50,10 @@ body{
 
 .navbar{
     --bs-navbar-padding-x: 1 !important;
-    
 }
 
 .nav{
     display:block !important;
-    background-color: var(--Alizarin-Crimson);
     width: 100%;
 }
 
