@@ -116,3 +116,5 @@ body{
 }
 
 /*Title*/
+
+console.log(null || 'string')
