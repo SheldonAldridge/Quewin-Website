@@ -21,10 +21,6 @@ body{
 
 /*Burger Nav Menu*/
 
-.burg-container{
-    padding-bottom: 1em;
-}
-
 .nav{
     display:block !important;
 }
@@ -89,10 +85,19 @@ body{
 /*Title*/
 
 #title{
-   position: fixed;
-   margin: auto auto;
-   width:100%;
-   height:100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+.f-name,.h-line,.l-name{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: glitch 1s infinite alternate-reverse;
 }
 
 .f-name,.l-name{
@@ -115,6 +120,22 @@ body{
     margin-left:1em;
 }
 
-/*Title*/
+/*Title Animation*/
+@keyframes glitch {
+    0%{transform: translate(0);
+        transform: matrix(0);}
 
-console.log(null || 'string')
+    20%{transform: translate(-5, 5px);
+        transform: matrix(1,0.1,-0.5,1,3,0)}
+
+    50%{transform: translate(5px, -5px);}
+
+    60%{transform: translate(-5px, 5px);}
+
+    80%{transform: translate(5px, -5px);}
+
+    100%{transform: translate(0);}
+}
+/*Title Animation*/
+
+/*Title*/
