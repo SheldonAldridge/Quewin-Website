@@ -16,7 +16,7 @@ body{
 
 @font-face {
     font-family: 'onePiece';
-    src: url("Resources/fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
+    src: url("/Resources/fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
 }
 
 /*Burger Nav Menu*/
