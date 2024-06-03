@@ -59,6 +59,11 @@ nav.mount('#burger-nav');
 const canvas = Vue.createApp({
    data(){
       return{
+
+         groundObj:{
+            background:"./Resources/Images/Images - artwork/MyWork.png"
+         },
+
          titleObj:{
             firstName: "Quewin",
             lastName: "Fortune"
@@ -68,3 +73,15 @@ const canvas = Vue.createApp({
 });
 
 canvas.mount('#canvas')
+
+const background = Vue.createApp({
+   data(){
+      return{
+         groundObj:{
+            background:"./Resources/Images/Artwork over 100/IMG-20240512-WA0083.jpg"
+         },
+      }
+   },
+});
+
+background.mount('#background-image')
