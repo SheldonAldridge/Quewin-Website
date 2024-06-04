@@ -73,15 +73,3 @@ const canvas = Vue.createApp({
 });
 
 canvas.mount('#canvas')
-
-const background = Vue.createApp({
-   data(){
-      return{
-         groundObj:{
-            backgroundOne:"./Resources/Images/Gallery/Background_Image/IMG-20240512-WA0083.jpg",
-         },
-      }
-   },
-});
-
-background.mount('#background-image')
