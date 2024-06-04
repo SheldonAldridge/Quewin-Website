@@ -78,7 +78,7 @@ const background = Vue.createApp({
    data(){
       return{
          groundObj:{
-            background:"./Resources/Images/Artwork over 100/IMG-20240512-WA0083.jpg"
+            backgroundOne:"./Resources/Images/Gallery/Background_Image/IMG-20240512-WA0083.jpg",
          },
       }
    },
