@@ -113,7 +113,7 @@ body{
 
 .f-name,.l-name{
     font-family: 'onePiece',sans-serif;
-    font-size:50px
+    font-size:50px;
 }
 
 .f-name{
@@ -152,7 +152,7 @@ body{
     filter: blur(2px);
     top:0;
     left:0;
-    color:var(--Diamond);
+    color:var(--white);
     animation: glitch-anim 5s step-end infinite;
 }
 
@@ -160,7 +160,7 @@ body{
     filter: blur(2px);
     top:0;
     left:0;
-    color:var(--);
+    color:var(--white);
     animation: glitch-anim 5s step-end infinite;
 }
 
@@ -237,6 +237,7 @@ body{
           15% 88%,
           52% 88%
         );
+        
       }
     
       30% {
