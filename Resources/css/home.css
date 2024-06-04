@@ -22,11 +22,12 @@ body{
 
 #background-image{
     position: relative;
-    max-height: 88vh;
     overflow: hidden;
+    max-height: 100%;
 }
 
 #background-image img{
+    
     width:100%;
     filter: brightness(0.3) blur(5px);
 }
