@@ -9,7 +9,8 @@ body{
     --Celtic-Blue: #2F76DC;
     --Diamond: #B9EFF8;
     --Ripe-Mango: #FBC920;
-    --Alizarin-Crimson: #E62C39;
+    --Alizarin-Crimson-light: #bb232d;
+    --Alizarin-Crimson-dark: #911e26;
     --Crayolas-Outer-Space: #2E333F;
     --Crayolas-Gold: #DFC18A;
     --white:#ffff;
@@ -103,11 +104,11 @@ body{
 
 .f-name,.l-name{
     font-family: 'onePiece',sans-serif;
-    font-size:50px;
+    font-size:66px;
 }
 
-.f-name{
-    color: var(--Alizarin-Crimson);
+.f-name,.l-name{
+    color: var(--Alizarin-Crimson-dark);
 }
 
 .h-line{
@@ -117,7 +118,6 @@ body{
 }
 
 .l-name{
-    color: var(--Celtic-Blue);
     margin-left:1em;
 }
 
@@ -127,7 +127,7 @@ body{
 
 .glitch {
 	position: relative;
-	overflow: hidden;
+	
 }
 
 .glitch img {
@@ -139,41 +139,45 @@ body{
 }
 
 .glitch__layers {
-    width: 100%;
+    max-width: 100%;
 	position: absolute;
 	z-index: 2;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
+    overflow: hidden;
 }
 
 .glitch__layer {
+    width: 100%;
     filter: brightness(0.5) blur(5px);
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-image: url("/Resources/Images/Gallery/Background_Image/IMG-20240512-WA0073.jpg");
+	background-image: url("/Resources/Images/Gallery/Background_Image/IMG-20240512-WA0083.jpg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
 .glitch__layer:nth-child(1) {
     overflow: hidden;
-	transform: translateX(0);
-	animation: glitch-anim-1 5s infinite linear alternate;
+	transform: translateX(-10%) translateY(5%);
+	animation: glitch-anim-1 8s infinite linear alternate;
 }
 .glitch__layer:nth-child(2) {
     overflow: hidden;
-	transform: translateX(0) translateY(0);
-	animation: glitch-anim-2 10s -.8s infinite linear alternate;
+	transform: translateX(3%) translateY(-5%);
+	animation: glitch-anim-2 5s -.8s infinite linear alternate;
 }
+
 .glitch__layer:nth-child(3) {
     overflow: hidden;
-	transform: translateX(0);
-	animation: glitch-anim-flash 1s infinite linear;
+	transform: translateX(0%);
+	animation: glitch-anim-flash 3s infinite linear;
 }
+
 
 .layers{
     position: relative;
@@ -188,19 +192,19 @@ body{
 }
 
 .layers::before{
-    filter: blur(2px);
+    filter:brightness(0.3) contrast(10) blur(5px);
     top:0;
     left:0;
-    color:var(--white);
+    color:var(--Alizarin-Crimson-light);
     animation: glitch-anim 8s step-end infinite;
 }
 
 .layers::after{
-    filter: blur(2px);
+    filter:brightness(0.3) contrast(10) blur(5px);
     top:0;
     left:0;
-    color:var(--white);
-    animation: glitch-anim 4s step-end infinite;
+    color:var(--Alizarin-Crimson-light);
+    animation: glitch-anim 3s step-end infinite;
 }
 
 /*Glitch Animation*/
@@ -275,9 +279,8 @@ body{
           15% 39%,
           15% 88%,
           52% 88%
-        );
-        
-      }
+        )
+      };
     
       30% {
         clip-path: polygon(
@@ -460,19 +463,15 @@ body{
 @keyframes glitch-anim-1 {
 	0% {
 		clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
-        opacity: 0;
 	}
 	10% {
 		clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-        opacity: 0;
 	}
 	20% {
 		clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-        opacity: 0;
 	}
 	30% {
 		clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-        opacity: 1;
 	}
 	40% {
 		clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
@@ -508,7 +507,6 @@ body{
 	}
 	30% {
 		clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-
 	}
 	45% {
 		clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);

@@ -1,30 +1,25 @@
-
-
-const burgNavbar = Vue.createApp({
+const Portfolio = Vue.createApp({
     data(){
        return{
-          objectNav: {
-           burgerMen:'./Resources/Images/Navbar/Burger-Menu.svg',
-           burgerMenSlide:'./Resources/Images/Navbar/Burger-Menu-Slide.svg',
-          },
 
-          listNavObj: {
+        objectNav: {
+            burgerMen:'./Resources/Images/Navbar/Burger-Menu.svg',
+            burgerMenSlide:'./Resources/Images/Navbar/Burger-Menu-Slide.svg',
+           },
+
+         listNavObj: {
             home: 'Home',
             aboutMe: 'About Me',
             ContactMe: 'Contact Me'
          },
- 
-          projectPage:{
-            title: 'Portfolio'
-          },
-
+          
           projectTitleObj:{
             digitalArt: 'Digital Art Work',
             traditionalArt: 'Traditional Art Work',
             animation: 'Animation Work'
         },
 
-        digitalArt:[
+            digitalArt:[
             [
                 {src: './Resources/Images/Gallery/Digital Art/Image 1.jpg', alt: 'Image 1'}
             ],
@@ -78,12 +73,12 @@ const burgNavbar = Vue.createApp({
                 {src: './Resources/Images/Gallery/Artwork/Image 10.jpg', alt: 'Image 10'},
             ]
            ],
- 
-          //Toggle Burger Menu Images
-          ShowBurgerMen: true,
-          ShowBurgerMenSlide: false,
-          ShowMenuList: false,
- 
+
+        //Toggle Burger Menu Images
+        ShowBurgerMen: true,
+        ShowBurgerMenSlide: false,
+        ShowMenuList: false,
+
           //Toggle padding
           BurgPadding: false,
  
@@ -98,26 +93,27 @@ const burgNavbar = Vue.createApp({
        };
     },
        methods:{
-          toggleBurger() {
-             this.ShowBurgerMen = !this.ShowBurgerMen,
-             this.ShowBurgerMenSlide = !this.ShowBurgerMenSlide,
-             this.ShowMenuList = !this.ShowMenuList,
-             this.BurgPadding = !this.BurgPadding
-          },
- 
-          toggleBurgerSlide() {
-             this.ShowBurgerMenSlide = !this.ShowBurgerMenSlide,
-             this.ShowBurgerMen = !this.ShowBurgerMen,
-             this.ShowMenuList = !this.ShowMenuList
-             
-          },
- 
-          toggleSlideIn(){
-             this.slideIn = !this.slideIn
-          },
-          toggleSlideDown(){
-             this.slideDown = !this.slideDown
-          },
+
+        toggleBurger() {
+            this.ShowBurgerMen = !this.ShowBurgerMen,
+            this.ShowBurgerMenSlide = !this.ShowBurgerMenSlide,
+            this.ShowMenuList = !this.ShowMenuList,
+            this.BurgPadding  = !this.BurgPadding
+         },
+   
+         toggleBurgerSlide() {
+            this.ShowBurgerMenSlide = !this.ShowBurgerMenSlide,
+            this.ShowBurgerMen = !this.ShowBurgerMen,
+            this.ShowMenuList = !this.ShowMenuList
+            
+         },
+   
+         toggleSlideIn(){
+            this.slideIn = !this.slideIn
+         },
+         toggleSlideDown(){
+            this.slideDown = !this.slideDown
+         },
 
           toggleDigArt() {
             this.ShowDigArt = true,
@@ -132,6 +128,6 @@ const burgNavbar = Vue.createApp({
        },
 });
 
-burgNavbar.mount('#burger-nav');
+Portfolio.mount('#burger-nav');
 
 
