@@ -1,7 +1,6 @@
 const nav = Vue.createApp({
    data(){
       return{
-
          objectNav: {
             burgerMen:'./Resources/Images/Navbar/Burger-Menu.svg',
             burgerMenSlide:'./Resources/Images/Navbar/Burger-Menu-Slide.svg',
@@ -12,6 +11,7 @@ const nav = Vue.createApp({
             aboutMe: 'About Me',
             ContactMe: 'Contact Me'
          },
+
           //Toggle Burger Menu Images
          ShowBurgerMen: true,
          ShowBurgerMenSlide: false,
@@ -56,20 +56,3 @@ const nav = Vue.createApp({
 
 nav.mount('#burger-nav');
 
-const canvas = Vue.createApp({
-   data(){
-      return{
-
-         groundObj:{
-            background:"./Resources/Images/Images - artwork/MyWork.png"
-         },
-
-         titleObj:{
-            firstName: "Quewin",
-            lastName: "Fortune"
-         },
-      }
-   },
-});
-
-canvas.mount('#canvas')

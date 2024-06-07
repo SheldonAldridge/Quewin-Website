@@ -17,7 +17,6 @@
         <div id="burg-container" :class="{'burg-container': BurgPadding}">
             <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
             <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
-            <h5 class="display-6">{{projectPage.title}}</h5>
         </div>
 
        <div id="navFlex">
@@ -51,21 +50,22 @@
          </ul>
     </div>
 
-        <main>
-         <div class="row">
-                <div v-for="(images, index) in digitalArt" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 1}" v-if="ShowDigArt">
-                    <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt" class="dig-image-transition">
-                </div>
-            
-                <div v-for="(images, index) in traditionalArt" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 2}" :id = "'artWork'" v-if="ShowTradArt">
-                    <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt" class="dig-image-transition">
-                </div>
-        </div>
-    </main>
-
+    <main>
+        <div class="row" id="Gallary">
+               <div v-for="(images, index) in digitalArt" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 1}" v-if="ShowDigArt">
+                   <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt" class="dig-image-transition">
+               </div>
+           
+               <div v-for="(images, index) in traditionalArt" :key="index" :class="{'column' : index % 2 === 1, 'column-one' : index % 2 !== 2}" :id = "'artWork'" v-if="ShowTradArt">
+                   <img v-for="(image, i) in images" :key="i" :src="image.src" :alt="image.alt" class="dig-image-transition">
+               </div>
+       </div>
+   </main>
+   
     </div>
 
-   
+    
+    
 
 </body>
 </html>
