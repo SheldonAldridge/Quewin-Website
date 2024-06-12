@@ -1,0 +1,60 @@
+/*Burger Nav Menu*/
+
+.nav{
+    display:block !important;
+}
+
+#burg-container,#burger-nav{
+    background-color: var(--Crayolas-Gold);
+}
+
+#burg-menu,#burg-menu-slide{
+    margin: 1em;
+    width:10%;
+}
+
+#burg-menu{
+    
+    filter: invert(80%) sepia(78%) saturate(2451%) hue-rotate(337deg) brightness(30%) contrast(99%);
+}
+
+#burg-menu-slide{
+    transition: transform 0.5s ease;
+    filter: invert(41%) sepia(20%) saturate(3167%) hue-rotate(186deg) brightness(97%) contrast(94%);
+}
+
+.nav-item a{
+    color: var(--Crayolas-Outer-Space) !important;
+}
+
+/*Nav list Items*/
+
+#menu-List{
+    text-align: left;
+}
+
+/*Nav list Items*/
+
+/*Burger Menu Animations*/
+
+.slide-in-animate{
+    animation: slideIn 0.3s  1 ease;
+}
+
+.slide-down-animate{
+    animation: slidedown 0.3s 1 ease;
+}
+
+@keyframes slideIn {
+    0%{transform: translateX(0);}
+    25%{transform: translateX(10%);}
+    50%{transform: translateX(0);}
+    75%{transform: translateX(5%);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes slidedown{
+    0%{transform: translateY(-20%); opacity: 0;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+/*Burger Menu Animations*/
