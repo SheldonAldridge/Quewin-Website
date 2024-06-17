@@ -7,12 +7,6 @@ const canvas = Vue.createApp({
             burgerMenSlide:'./Resources/Images/Navbar/Burger-Menu-Slide.svg',
            },
 
-         listNavObj: {
-            portfolio: 'Portfolio',
-            aboutMe: 'About Me',
-            ContactMe: 'Contact Me'
-         },
- 
           groundObj:{
              background:"./Resources/Images/Images - artwork/MyWork.png"
           },
