@@ -49,14 +49,26 @@
 
         <div class="container">
             <div id="aboutMe">
+
                 <div class="professional">
                     <p>{{aboutMe.professional}}</p>
                 </div>
+
                 <div class="journey-head">
                     <h1 class="display-1">Journey</h1>
                     <p>{{aboutMe.journey}}</p>
                 </div>
-                
+
+                <div class="skills-head">
+                    <h1 class="display-1">Skills</h1>
+                    <h3 class="display-6">Traditional Art Tools</h3>
+
+                    <div class="skill-background">
+                        <img :src="skills.pensImage" alt="Pen Icons">
+                        <h1 class="display-1">{{skills.pens}}</h1>
+                    </div>
+
+                </div>
 
             </div>
         </div>

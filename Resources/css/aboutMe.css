@@ -20,6 +20,7 @@ body{
     --Crayolas-Outer-Space: #2E333F;
     --Crayolas-Gold: #DFC18A;
     --white:#ffff;
+    --black-Outer-Space: #000000;
 }
 
 #fullWidth{
@@ -46,11 +47,35 @@ body{
     text-align: justify;
 }
 
-.professional p,.journey-head p{
+.professional p,.journey-head p,.skills-head p{
     font-size:14px;
 }
 
-.journey-head h1{
+.journey-head h1,.skills-head h1{
     margin-top: 2rem;
     font-family: 'onePiece', sans-serif;
+}
+
+.skills-head h3{
+    margin-top: 1rem;
+}
+
+.skill-background{
+    display: flex;
+    max-width: 100%;
+    background-color: var(--white);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-background img{
+    margin:10px;
+    width: 20%;
+    
+}
+
+.skill-background h1{
+    color: var(--Crayolas-Outer-Space);
+    
 }
