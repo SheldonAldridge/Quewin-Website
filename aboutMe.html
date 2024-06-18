@@ -23,7 +23,6 @@
                 <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
             </div>
 
-
             <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
                 <li class="nav-item">
                  <a href="./index.html" class="nav-link">{{listNavObj.home}}</a>
@@ -43,12 +42,25 @@
 
     <section>
         <div class="container" id="fullWidth">
-            <div id="aboutMe">
-                <img :src="AboutMe.QuweinImage" alt="Image Of Quwein" class="img-fluid">
-                <img :src="AboutMe.glitchImage" alt="Image Of Quwein" class="img-fluid">
-               
+            <div id="hero-image">
+                <img :src="heroImage.QuweinImage" alt="Image Of Quwein" class="img-fluid">
             </div>
         </div>
+
+        <div class="container">
+            <div id="aboutMe">
+                <div class="professional">
+                    <p>{{aboutMe.professional}}</p>
+                </div>
+                <div class="journey-head">
+                    <h1 class="display-1">Journey</h1>
+                    <p>{{aboutMe.journey}}</p>
+                </div>
+                
+
+            </div>
+        </div>
+
     </section>
 
 </body>

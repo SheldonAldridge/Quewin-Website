@@ -1,15 +1,25 @@
-const about = Vue.createApp({
+const heroImage = Vue.createApp({
   data() {
     return {
-      AboutMe: {
+      heroImage: {
         QuweinImage:"./Resources/Images/Quewin Images/69543088-01f5-4102-9bde-d2420736d14d.jpg",
-        glitchImage:"./Resources/Images/Quewin Images/8133e953-7694-455f-9ddf-c51df0b94f8c.jpg",
-        professional:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        journey:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        passion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       },
     };
   },
 });
 
-about.mount('#aboutMe');
+heroImage.mount('#hero-image');
+
+const aboutMe = Vue.createApp({
+  data(){
+    return{
+      aboutMe:{
+        professional:"I am a dedicated professional with an unwavering commitment to excellence in digital and graphic design. I strive to master my craft, always aiming to produce outstanding visual results that set me apart in the industry. My passion for continuous growth and development drives me to stay ahead of design trends and consistently exceed expectations. Whether working individually or as part of a team, I am devoted to delivering exceptional outcomes that not only meet but often surpass client expectations.",
+        journey:"I began my artistic journey with traditional art, spending years honing my skills with pens, colored pencils, sketch markers, paint, and ink. As my passion for art grew, I transitioned into the digital realm, starting with Autodesk SketchBook. From there, I expanded my expertise to Photoshop and explored animation through Procreate and FlipaClip. Each step of this journey has deepened my understanding and refined my abilities in digital and graphic design.",
+        passion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      }
+    }
+  }
+})
+
+aboutMe.mount('#aboutMe')
