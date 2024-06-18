@@ -20,7 +20,15 @@ const aboutMe = Vue.createApp({
       },
       skills:{
         pens:"Pens",
-        pensImage:"/Resources/Images/Skills_Images/Pen.svg"
+        pensImage:"/Resources/Images/Skills_Images/Pen.svg",
+        pencil:"Pencils",
+        pencilImage:"/Resources/Images/Skills_Images/Pencil.svg",
+        marker:"Markers",
+        markerImage:"/Resources/Images/Skills_Images/Marker.svg",
+        paintbrush:"Paintbrush",
+        paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.svg",
+        ink:"Ink",
+        inkImage:"/Resources/Images/Skills_Images/ink.svg",
       }
     }
   }
