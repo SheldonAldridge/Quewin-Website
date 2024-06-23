@@ -35,3 +35,24 @@ const aboutMe = Vue.createApp({
 })
 
 aboutMe.mount('#aboutMe')
+
+const skills = Vue.createApp({
+  data(){
+    return{
+      skills:{
+        pens:"Pens",
+        pensImage:"/Resources/Images/Skills_Images/Pen.svg",
+        pencil:"Pencils",
+        pencilImage:"/Resources/Images/Skills_Images/Pencil.svg",
+        marker:"Markers",
+        markerImage:"/Resources/Images/Skills_Images/Marker.svg",
+        paintbrush:"Paintbrush",
+        paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.svg",
+        ink:"Ink",
+        inkImage:"/Resources/Images/Skills_Images/ink.svg",
+      }
+    }
+  }
+})
+
+skills.mount('#skills-set')

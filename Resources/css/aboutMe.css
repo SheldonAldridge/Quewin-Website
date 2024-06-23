@@ -47,17 +47,31 @@ body{
     text-align: justify;
 }
 
-.professional p,.journey-head p,.skills-head p{
+.professional p,.journey-head p,#skills-head p{
     font-size:14px;
 }
 
-.journey-head h1,.skills-head h1{
+.journey-head h1,#skills-head h1{
     margin-top: 2rem;
     font-family: 'onePiece', sans-serif;
+    color: var(--white);
 }
 
-.skills-head h3{
+#skills-head h3{
+    color: var(--white);
+}
+
+#skills-head{
+    --bs-gutter-x: 0rem !important;
+}
+
+#skills-head h3{
     margin-top: 1rem;
+}
+
+#monitor{
+    position: relative;
+    left: 0;
 }
 
 .skill-flex{
@@ -66,7 +80,6 @@ body{
 }
 
 .skill-background{
-    background-color: var(--Alizarin-Crimson-light);
     width: 20%;
     
 }
@@ -75,30 +88,3 @@ body{
     margin: 10px auto;
     width: 100%;
 }
-
-.skill-text-background{
-    background-color: var(--Celtic-Blue);
-    flex:1;
-}
-
-.skill-text-background h1{
-    color: var(--white);
-    text-align: center;
-}
-
-#revers-background{
-    background-color: var(--Celtic-Blue);
-}
-
-#revers-background img{
-    filter:invert(100%) sepia(0%) saturate(1%) hue-rotate(330deg) brightness(103%) contrast(100%);
-}
-
-#revers-text-background{
-    background-color: var(--Alizarin-Crimson-dark);
-}
-
-#revers-text-background h1{
-    color: var(--black-Outer-Space);
-}
-

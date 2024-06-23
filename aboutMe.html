@@ -58,11 +58,19 @@
                     <h1 class="display-1">Journey</h1>
                     <p>{{aboutMe.journey}}</p>
                 </div>
+            </div>
 
-                <div class="skills-head">
+            <div id="skills-set">
+                <div class="container-sm container-md" id="skills-head">
                     <h1 class="display-1">Skills</h1>
                     <h3 class="display-6">Traditional Art Tools</h3>
 
+                <div id="monitor">
+                    <div class="screenlayer">
+                        <div class="screenflick"></div>
+                        <div class="screenflick"></div>
+                        <div class="screenflick"></div>
+                    </div>
                 <div class="skill-flex">
                     <div class="skill-background">
                         <img :src="skills.pensImage" alt="Pen Icons">
@@ -73,10 +81,10 @@
                 </div>
 
                 <div class="skill-flex">
-                    <div class="skill-background" id="revers-background">
+                    <div class="skill-background">
                         <img :src="skills.pencilImage" alt="Pencil Icons">
                     </div>
-                    <div class="skill-text-background" id="revers-text-background">
+                    <div class="skill-text-background">
                         <h1 class="display-1">{{skills.pencil}}</h1>
                     </div>
                 </div>
@@ -91,10 +99,10 @@
                 </div>
 
                 <div class="skill-flex">
-                    <div class="skill-background" id="revers-background">
+                    <div class="skill-background">
                         <img :src="skills.paintbrushImage" alt="Pencil Icons">
                     </div>
-                    <div class="skill-text-background" id="revers-text-background">
+                    <div class="skill-text-background">
                         <h1 class="display-1">{{skills.paintbrush}}</h1>
                     </div>
                 </div>
@@ -107,15 +115,10 @@
                         <h1 class="display-1">{{skills.ink}}</h1>
                     </div>
                 </div>
-
-                
-
-                
-                
-
             </div>
             </div>
         </div>
+    </div>
 
     </section>
 
