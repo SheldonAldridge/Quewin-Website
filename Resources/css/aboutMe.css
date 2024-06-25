@@ -74,6 +74,10 @@ body{
     left: 0;
 }
 
+.screenlayer{
+    
+}
+
 .skill-flex{
     display: flex;
     max-width: 100%;
