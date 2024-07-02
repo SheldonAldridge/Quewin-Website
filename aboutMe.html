@@ -65,18 +65,12 @@
                     <h1 class="display-1">Skills</h1>
                     <h3 class="display-6">Traditional Art Tools</h3>
 
-                <div id="monitor">
-                    <div class="screenlayer">
-                        <div class="screenflick"></div>
-                        <div class="screenflick"></div>
-                        <div class="screenflick"></div>
-                    </div>
                 <div class="skill-flex">
                     <div class="skill-background">
-                        <img :src="skills.pensImage" alt="Pen Icons">
+                        <img :src="skills.pensImage" alt="Pen Icons" class="penIcon">
                     </div>
                     <div class="skill-text-background">
-                        <h1 class="display-1">{{skills.pens}}</h1>
+                        <h1 class="display-6" id="Lato-text">{{skills.pens}}</h1>
                     </div>
                 </div>
 
@@ -85,38 +79,68 @@
                         <img :src="skills.pencilImage" alt="Pencil Icons">
                     </div>
                     <div class="skill-text-background">
-                        <h1 class="display-1">{{skills.pencil}}</h1>
+                        <h1 class="display-6" id="Lato-text">{{skills.pencil}}</h1>
                     </div>
                 </div>
 
                 <div class="skill-flex">
                     <div class="skill-background">
-                        <img :src="skills.markerImage" alt="Pen Icons">
+                        <img :src="skills.markerImage" alt="Marker Icons">
                     </div>
                     <div class="skill-text-background">
-                        <h1 class="display-1">{{skills.marker}}</h1>
+                        <h1 class="display-6" id="Lato-text">{{skills.marker}}</h1>
                     </div>
                 </div>
 
                 <div class="skill-flex">
                     <div class="skill-background">
-                        <img :src="skills.paintbrushImage" alt="Pencil Icons">
+                        <img :src="skills.paintbrushImage" alt="Paintbrush Icons">
                     </div>
                     <div class="skill-text-background">
-                        <h1 class="display-1">{{skills.paintbrush}}</h1>
+                        <h1 class="display-6" id="Lato-text">{{skills.paintbrush}}</h1>
                     </div>
                 </div>
 
                 <div class="skill-flex">
                     <div class="skill-background">
-                        <img :src="skills.inkImage" alt="Pen Icons">
+                        <img :src="skills.inkImage" alt="Ink Icons" class="inkIcon">
                     </div>
                     <div class="skill-text-background">
-                        <h1 class="display-1">{{skills.ink}}</h1>
+                        <h1 class="display-6" id="Lato-text">{{skills.ink}}</h1>
                     </div>
                 </div>
             </div>
+
+            <div class="container-sm container-md" id="skills-head">
+                <h3 class="display-6">Digital Art Tools</h3>
+
+            <div class="skill-flex">
+                <div class="skill-background">
+                    <img :src="skills.pensImage" alt="Pen Icons" class="penIcon">
+                </div>
+                <div class="skill-text-background">
+                    <h1 class="display-6" id="Lato-text">{{skills.pens}}</h1>
+                </div>
             </div>
+
+            <div class="skill-flex">
+                <div class="skill-background">
+                    <img :src="skills.pencilImage" alt="Pencil Icons">
+                </div>
+                <div class="skill-text-background">
+                    <h1 class="display-6" id="Lato-text">{{skills.pencil}}</h1>
+                </div>
+            </div>
+
+            <div class="skill-flex">
+                <div class="skill-background">
+                    <img :src="skills.markerImage" alt="Marker Icons">
+                </div>
+                <div class="skill-text-background">
+                    <h1 class="display-6" id="Lato-text">{{skills.marker}}</h1>
+                </div>
+            </div>
+
         </div>
     </div>
 

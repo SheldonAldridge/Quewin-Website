@@ -5,9 +5,18 @@ body{
     
 }
 
+p{
+font-family: 'lato', sans-serif !important;
+}
+
 @font-face {
     font-family: 'onePiece';
     src: url("../fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url("../fonts/Lato/Lato/Lato-Light.ttf") format('truetype');
 }
 
 /*Luffy colour scheme*/
@@ -74,10 +83,6 @@ body{
     left: 0;
 }
 
-.screenlayer{
-    
-}
-
 .skill-flex{
     display: flex;
     max-width: 100%;
@@ -85,10 +90,27 @@ body{
 
 .skill-background{
     width: 20%;
-    
+    margin-top: 2em;
 }
 
 .skill-background img{
-    margin: 10px auto;
     width: 100%;
+}
+
+.inkIcon{
+    rotate: 230deg;
+}
+
+.penIcon{
+    rotate: 45deg;
+}
+
+.skill-text-background{
+    width:100%
+}
+
+#Lato-text{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lato',sans-serif !important;
 }
