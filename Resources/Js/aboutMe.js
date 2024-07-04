@@ -50,6 +50,12 @@ const skills = Vue.createApp({
         paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.svg",
         ink:"Ink",
         inkImage:"/Resources/Images/Skills_Images/ink.svg",
+        photoshop:"Adobe Photoshop",
+        photoshopImage:"/Resources/Images/Skills_Images/Adobe Photoshop.png",
+        sketchbook:"Autodesk Sketchbook",
+        sketchbookImage:"/Resources/Images/Skills_Images/Autodesk Sketchbook -black-white.png",
+        flipaclip:"FlipaClip",
+        flipaclipImage:"/Resources/Images/Skills_Images/FlipaClip-Emblem-black-white.png",
       }
     }
   }
