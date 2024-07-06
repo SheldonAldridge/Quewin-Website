@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Crayolas-Outer-Space) !important;
+}
+
+:root{
+    --Celtic-Blue: #2F76DC;
+    --Diamond: #B9EFF8;
+    --Ripe-Mango: #FBC920;
+    --Alizarin-Crimson: #E62C39;
+    --Crayolas-Outer-Space: #2E333F;
+    --Crayolas-Gold: #DFC18A;
+    --white:#ffff;
+}
+
+@font-face {
+    font-family: 'onePiece';
+    src: url("/Resources/fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
+}
+
+#fullWidth{
+    --bs-gutter-x: 0rem !important;
+}
+
+#hero-image{
+    text-align: center;
+    width:auto;
+    height:200px;
+    overflow: hidden;
+}
+
+#hero-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.display-1{
+    font-family: 'onePiece',sans-serif;
+    text-align: center;
+    color: var(--white);
+}
+
+#contactMe p{
+    text-align: justify;
+    color: var(--white);
+    margin: 0.5rem;
+}
+
+form{
+border-top: 1px solid var(--Crayolas-Gold);
+}
+
+.btn{
+    max-width: 100%;
+    width:50%;
+    text-align: center;
+}
+
+.col-auto label{
+    color:var(--white)
+}
+
+
+
+
+

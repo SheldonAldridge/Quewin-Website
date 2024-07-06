@@ -1,5 +1,17 @@
-/*Burger Nav Menu*/
+/*Luffy colour scheme*/
+:root{
+    --Celtic-Blue: #2F76DC;
+    --Diamond: #B9EFF8;
+    --Ripe-Mango: #FBC920;
+    --Alizarin-Crimson: #E62C39;
+    --Crayolas-Outer-Space: #2E333F;
+    --Crayolas-Gold: #DFC18A;
+    --white:#ffff;
+}
 
+
+
+/*Burger Nav Menu*/
 .nav{
     display:block !important;
 }
