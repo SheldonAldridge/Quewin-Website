@@ -7,9 +7,10 @@ const nav = Vue.createApp({
            },
 
          listNavObj: {
+            home: 'Home',
             portfolio: 'Portfolio',
             aboutMe: 'About Me',
-            ContactMe: 'Contact Me'
+           
          },
 
           //Toggle Burger Menu Images
