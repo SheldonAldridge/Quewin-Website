@@ -20,19 +20,19 @@ const aboutMe = Vue.createApp({
       },
       skills:{
         pens:"Pens",
-        pensImage:"/Resources/Images/Skills_Images/Pen.svg",
+        pensImage:"/Resources/Images/Skills_Images/Pen.png",
         pencil:"Pencils",
-        pencilImage:"/Resources/Images/Skills_Images/Pencil.svg",
+        pencilImage:"/Resources/Images/Skills_Images/Pencil.png",
         marker:"Markers",
-        markerImage:"/Resources/Images/Skills_Images/Marker.svg",
+        markerImage:"/Resources/Images/Skills_Images/Marker.png",
         paintbrush:"Paintbrush",
-        paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.svg",
+        paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.png",
         ink:"Ink",
-        inkImage:"/Resources/Images/Skills_Images/ink.svg",
+        inkImage:"/Resources/Images/Skills_Images/ink.png",
       }
     }
   }
-})
+});
 
 aboutMe.mount('#aboutMe')
 
@@ -41,21 +41,21 @@ const skills = Vue.createApp({
     return{
       skills:{
         pens:"Pens",
-        pensImage:"/Resources/Images/Skills_Images/Pen.svg",
+        pensImage:"/Resources/Images/Skills_Images/Pen.png",
         pencil:"Pencils",
-        pencilImage:"/Resources/Images/Skills_Images/Pencil.svg",
+        pencilImage:"/Resources/Images/Skills_Images/Pencil.png",
         marker:"Markers",
-        markerImage:"/Resources/Images/Skills_Images/Marker.svg",
+        markerImage:"/Resources/Images/Skills_Images/Marker.png",
         paintbrush:"Paintbrush",
-        paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.svg",
+        paintbrushImage:"/Resources/Images/Skills_Images/paintbrush.png",
         ink:"Ink",
-        inkImage:"/Resources/Images/Skills_Images/ink.svg",
+        inkImage:"/Resources/Images/Skills_Images/ink.png",
         photoshop:"Adobe Photoshop",
         photoshopImage:"/Resources/Images/Skills_Images/Adobe Photoshop.png",
         sketchbook:"Autodesk Sketchbook",
-        sketchbookImage:"/Resources/Images/Skills_Images/Autodesk Sketchbook -black-white.png",
+        sketchbookImage:"/Resources/Images/Skills_Images/Autodesk Sketchbook -black-white.svg",
         flipaclip:"FlipaClip",
-        flipaclipImage:"/Resources/Images/Skills_Images/FlipaClip-Emblem-black-white.png",
+        flipaclipImage:"/Resources/Images/Skills_Images/FlipaClip.png",
       }
     }
   }

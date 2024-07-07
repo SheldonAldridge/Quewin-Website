@@ -60,31 +60,35 @@ font-family: 'lato', sans-serif !important;
     font-size:14px;
 }
 
-.journey-head h1,#skills-head h1,#aboutMe h1{
+.journey-head h1,#skills-set h1,#aboutMe h1{
     margin-top: 2rem;
     font-family: 'onePiece', sans-serif;
     color: var(--white);
 }
 
-#skills-head h3{
+#skills-set h3{
     color: var(--white);
 }
 
-#skills-head{
+#skills-set{
     --bs-gutter-x: 0rem !important;
 }
 
-#skills-head h3{
+#skills-set h3{
     margin-top: 1rem;
 }
 
-#monitor{
-    position: relative;
-    left: 0;
+#d-none{
+    display: block !important;
+}
+
+#d-none h3{
+    color: var(--Alizarin-Crimson-dark);
+    
 }
 
 .skill-flex{
-    display: flex;
+    display: none;
     max-width: 100%;
 }
 
@@ -102,7 +106,7 @@ font-family: 'lato', sans-serif !important;
 }
 
 .penIcon{
-    rotate: 45deg;
+    rotate: 45deg !important;
 }
 
 .skill-text-background{

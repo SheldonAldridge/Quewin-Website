@@ -24,8 +24,31 @@ const heroImage = Vue.createApp({
         paragraph:{
             subtitle:"Looking for someone who is passionate about 2D art and graphic design? I'm seeking new opportunities to bring creativity and precision to your projects. Let's discuss how I can contribute to your team."
         },
+
+        socialMedia:{
+          facebook:"/Resources/Images/Contact_Page_Images/facebook.png",
+          linkedIn:"/Resources/Images/Contact_Page_Images/linkedin.png",
+          pinterest:"/Resources/Images/Contact_Page_Images/Pinterest.png",
+          youtube:"/Resources/Images/Contact_Page_Images/youtube.png"
+        }
       };
     },
   });
 
   title.mount('#contactMe')
+
+  const media = Vue.createApp({
+    data() {
+      return {
+  
+        socialMedia:{
+          facebook:"/Resources/Images/Contact_Page_Images/facebook.png",
+          linkedIn:"/Resources/Images/Contact_Page_Images/linkedin.png",
+          pinterest:"/Resources/Images/Contact_Page_Images/Pinterest.png",
+          youtube:"/Resources/Images/Contact_Page_Images/youtube.png"
+        }
+      };
+    },
+  });
+
+  media.mount('#media')

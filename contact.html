@@ -35,7 +35,7 @@
             </li>
     
                <li class="nav-item">
-                <a href="#" class="nav-link">{{listNavObj.aboutMe}}</a>
+                <a href="./aboutMe.html" class="nav-link">{{listNavObj.aboutMe}}</a>
                </li>
             </ul>
         </div>
@@ -46,10 +46,18 @@
             <img :src="heroImage.QuweinImage" alt="Image Of Quwein" class="img-fluid">
         </div>
 
+        <div class="d-flex flex-row mb-3" id="media">
+            <img :src="socialMedia.facebook" class="img-fluid" alt="Facebook icon">
+            <img :src="socialMedia.linkedIn" class="img-fluid" alt="Linkedin icon">
+            <img :src="socialMedia.pinterest" class="img-fluid" alt="Pinterest icon">
+            <img :src="socialMedia.youtube" class="img-fluid" alt="Youtube icon">
+        </div>
+
         <div id="contactMe">
             <h1 class="display-1">{{title.heroTitle}}</h1>
-            
         </div>
+
+        
     </div>
 
     <form action="" method="POST">
