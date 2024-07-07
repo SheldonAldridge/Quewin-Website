@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
     
-    <script src="Resources/Js/BurgerMenu_AboutMe.js" defer></script>
+    <script src="/Resources/Js/BurgerMenu.js"defer></script>
     <script src="Resources/Js/aboutMe.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://unpkg.com/vue@3"></script>
@@ -18,32 +18,32 @@
 
 <body>
     
-    <nav>
-        
-        <div class="navbar" id="burger-nav">
-
-            <div id="burg-container" :class="{'burg-container': BurgPadding}">
+    <nav class="navbar navbar-expand-lg" id="burger-nav">
+        <div class="container-fluid">
+            <div id="burg-container" :class="{'burg-container': BurgPadding}" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <img @click="toggleBurger" :src="objectNav.burgerMen" alt="Burger Menu" id="burg-menu" v-if="ShowBurgerMen">
                 <img @click="toggleBurgerSlide" :class="{'slide-in-animate':slideIn }" :src="objectNav.burgerMenSlide" alt="Burger Menu" id="burg-menu-slide" v-if="ShowBurgerMenSlide">
             </div>
-
-            <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}">
-                <li class="nav-item">
-                 <a href="./index.html" class="nav-link">{{listNavObj.home}}</a>
-             </li> 
-    
-            <ul class = "nav" v-if="ShowMenuList" :class="{'slide-down-animate': slideDown}" id="menu-List">
-               <li class="nav-item">
-                <a href="./Portfolio.html" class="nav-link">{{listNavObj.portfolio}}</a>
-            </li>
-    
-               <li class="nav-item">
-                <a href="./contact.html" class="nav-link">{{listNavObj.ContactMe}}</a>
-               </li>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">{{listNavObj.home}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutMe.html">{{listNavObj.aboutMe}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Portfolio.html">{{listNavObj.portfolio}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">{{listNavObj.contactMe}}</a>
+              </li>
+                </ul>
+              </li>
             </ul>
+          </div>
         </div>
-
-    </nav>
+      </nav>
 
 
     <section>
@@ -71,7 +71,7 @@
                     <h1 class="display-1">Skills</h1>
                     <h3 class="display-6">Traditional Art Tools</h3>
                     
-                    <div id="carouselExampleCaptions" class="carousel slide" id="fullWidth">
+                    <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>

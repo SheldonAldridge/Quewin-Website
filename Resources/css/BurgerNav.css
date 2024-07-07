@@ -16,17 +16,21 @@
     display:block !important;
 }
 
-#burg-container,#burger-nav{
+
+#burg-container img{
+    width: 10%; 
+}
+
+#burger-nav{
     background-color: var(--Crayolas-Gold);
 }
 
 #burg-menu,#burg-menu-slide{
     margin: 1em;
-    width:10%;
+    
 }
 
 #burg-menu{
-    
     filter: invert(80%) sepia(78%) saturate(2451%) hue-rotate(337deg) brightness(30%) contrast(99%);
 }
 
@@ -70,3 +74,9 @@
     100%{transform: translateY(0);opacity: 1;}
 }
 /*Burger Menu Animations*/
+
+@media (min-width: 1400px){
+    #burg-container img{
+        display: none;
+    }
+}
