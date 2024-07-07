@@ -71,7 +71,7 @@
                     <h1 class="display-1">Skills</h1>
                     <h3 class="display-6">Traditional Art Tools</h3>
                     
-                    <div id="carouselExampleCaptions" class="carousel slide" >
+                    <div id="carouselExampleCaptions" class="carousel slide" id="fullWidth">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -84,35 +84,30 @@
                           <div class="carousel-item active">
                             <img :src="skills.pensImage" class="d-block w-100 penIcon" alt="Pen Icon">
                             <div class="carousel-caption d-none d-md-block" id="d-none">
-                              <h3>{{skills.pens}}</h3>
                             </div>
                           </div>
 
                           <div class="carousel-item">
                             <img :src="skills.pencilImage" class="d-block w-100" alt="Pencil Icon">
                             <div class="carousel-caption d-none d-md-block" id="d-none">
-                                <h3>{{skills.pencil}}</h3>
                             </div>
                           </div>
 
                           <div class="carousel-item">
                             <img :src="skills.markerImage" class="d-block w-100" alt="Marker Icon">
                             <div class="carousel-caption d-none d-md-block" id="d-none">
-                              <h3>{{skills.marker}}</h3>
                             </div>
                           </div>
                           
                           <div class="carousel-item">
                             <img :src="skills.paintbrushImage" class="d-block w-100" alt="Paintbrush Icon">
                             <div class="carousel-caption d-none d-md-block" id="d-none">
-                              <h3>{{skills.paintbrush}}</h3>
                             </div>
                           </div>
 
                           <div class="carousel-item">
                             <img :src="skills.inkImage" class="d-block w-100 inkIcon" alt="Ink Icon">
                             <div class="carousel-caption d-none d-md-block " id="d-none">
-                              <h3>{{skills.ink}}</h3>
                             </div>
                           </div>
 
@@ -185,13 +180,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img :src="skills.photoshopImage" class="d-block w-100" alt="...">
+                    <img :src="skills.photoshopImage" class="d-block w-100" alt="Photoshop Logo">
                   </div>
                   <div class="carousel-item">
-                    <img src="skills.sketchbookImage" class="d-block w-100" alt="...">
+                    <img :src="skills.sketchbookImage" class="d-block w-100" alt="Sketchbook Logo">
                   </div>
                   <div class="carousel-item">
-                    <img src="skills.flipaclipImage" class="d-block w-100" alt="...">
+                    <img :src="skills.flipaclipImage" class="d-block w-100" alt="Flipaclip Logo">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

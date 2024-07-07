@@ -53,7 +53,7 @@ const skills = Vue.createApp({
         photoshop:"Adobe Photoshop",
         photoshopImage:"/Resources/Images/Skills_Images/Adobe Photoshop.png",
         sketchbook:"Autodesk Sketchbook",
-        sketchbookImage:"/Resources/Images/Skills_Images/Autodesk Sketchbook -black-white.svg",
+        sketchbookImage:"/Resources/Images/Skills_Images/Autodesk Sketchbook -black-white.png",
         flipaclip:"FlipaClip",
         flipaclipImage:"/Resources/Images/Skills_Images/FlipaClip.png",
       }
