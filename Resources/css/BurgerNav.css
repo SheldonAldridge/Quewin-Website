@@ -39,6 +39,7 @@
     filter: invert(41%) sepia(20%) saturate(3167%) hue-rotate(186deg) brightness(97%) contrast(94%);
 }
 
+
 .nav-item a{
     color: var(--Crayolas-Outer-Space) !important;
 }
@@ -75,8 +76,32 @@
 }
 /*Burger Menu Animations*/
 
-@media (min-width: 1400px){
+@media (min-width: 1400px) {
     #burg-container img{
         display: none;
+    }
+    .navbar-nav{
+        font-size:20px;
+        margin: auto;
+        gap: 10rem;
+    }
+
+    .nav-link:hover{
+        transform: scale(1.5);
+    }
+}
+
+@media (min-width: 576px) {
+    #burg-container img{
+        display: none;
+    }
+    .navbar-nav{
+        font-size:20px;
+        margin: auto;
+        gap: 10rem;
+    }
+
+    .nav-link:hover{
+        transform: scale(1.5);
     }
 }

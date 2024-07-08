@@ -25,16 +25,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">{{listNavObj.home}}</a>
+                <a class="nav-link active" aria-current="page" href="./index.html" data-text="{{listNavObj.home}}">{{listNavObj.home}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./aboutMe.html">{{listNavObj.aboutMe}}</a>
+                <a class="nav-link" href="./aboutMe.html" data-text="{{listNavObj.aboutMe}}">{{listNavObj.aboutMe}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Portfolio.html">{{listNavObj.portfolio}}</a>
+                <a class="nav-link" href="./Portfolio.html" data-text="{{listNavObj.portfolio}}">{{listNavObj.portfolio}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contact.html">{{listNavObj.contactMe}}</a>
+                <a class="nav-link" href="./contact.html" data-text="{{listNavObj.contactMe}}">{{listNavObj.contactMe}}</a>
               </li>
                 </ul>
               </li>
@@ -58,11 +58,9 @@
         <div id="contactMe">
             <h1 class="display-1">{{title.heroTitle}}</h1>
         </div>
-
-        
     </div>
 
-    <form action="" method="POST">
+    <form class="form" action="" method="POST">
         <div class="col-auto" style="margin: 1rem;">
             <label for="formGroupExampleInput" class="form-label">First Name</label>
             <input type="text" class="form-control" id="formGroupExampleInput">

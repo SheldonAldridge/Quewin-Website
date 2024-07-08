@@ -46,6 +46,7 @@ body{
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    
 }
 
 .display-1{
@@ -73,6 +74,189 @@ border-top: 1px solid var(--Crayolas-Gold);
 .col-auto label{
     color:var(--white)
 }
+
+@media(min-width:576px){
+
+    #fullWidth{
+        max-width: 100%;
+    }
+
+    #hero-image{
+        height:auto;
+        max-height:40vh;
+        width: auto;
+        overflow: hidden;
+    }
+
+    #hero-image img {
+        object-fit: cover;
+        transform: translateY(-5rem);
+    }
+
+    .d-flex{
+        width: 100%;
+    }
+
+    .d-flex img{
+        width:5%;
+        
+    }
+
+    .form{
+        width: auto;
+        margin: auto;
+    }
+
+    
+}
+
+@media(min-width:768px){
+
+    #fullWidth{
+        max-width: 100%;
+    }
+
+    #hero-image{
+        height:auto;
+        max-height:40vh;
+        width: auto;
+        overflow: hidden;
+    }
+
+    #hero-image img {
+        object-fit: cover;
+        transform: translateY(-15rem);
+    }
+
+    .d-flex{
+        width: 100%;
+    }
+
+    .d-flex img{
+        width:5%;
+        
+    }
+
+    .form{
+        width: auto;
+        margin: auto;
+    }
+
+    
+}
+
+@media(min-width:992px){
+
+    #fullWidth{
+        width: 80%;
+    }
+
+    #hero-image{
+        height:auto;
+        max-height:50vh;
+        width: auto;
+        overflow: hidden;
+        
+    }
+
+    #hero-image img {
+        object-fit: cover;
+        transform: translateY(-10rem);
+    }
+
+    .d-flex{
+        width: 100%;
+    }
+
+    .d-flex img{
+        width:5%;
+        
+    }
+
+    .form{
+        width: 80%;
+        margin: auto;
+    }
+
+    
+}
+
+@media(min-width:1200px){
+
+    #fullWidth{
+        width: 80%;
+    }
+
+    #hero-image{
+        height:auto;
+        max-height:45vh;
+        width: auto;
+        overflow: hidden;
+        
+    }
+
+    #hero-image img {
+        object-fit: cover;
+        transform: translateY(-20rem);
+    }
+
+    .d-flex{
+        width: 100%;
+    }
+
+    .d-flex img{
+        width:5%;
+        
+    }
+
+    .form{
+        width: 80%;
+        margin: auto;
+    }
+
+    
+}
+
+@media(min-width:1400px){
+
+    #fullWidth{
+        width: 60%;
+    }
+
+    #hero-image{
+        height:auto;
+        max-height:55vh;
+        width: auto;
+        overflow: hidden;
+        
+    }
+
+    #hero-image img {
+        object-fit: cover;
+        transform: translateY(-20rem);
+    }
+
+    .d-flex{
+        width: 100%;
+    }
+
+    .d-flex img{
+        width:5%;
+        
+    }
+
+    .form{
+        width: 60%;
+        margin: auto;
+    }
+
+    
+}
+
+
+
+
+
 
 
 
