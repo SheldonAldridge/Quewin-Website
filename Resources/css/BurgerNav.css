@@ -76,32 +76,40 @@
 }
 /*Burger Menu Animations*/
 
+@media (min-width: 992px) {
+    #burg-container img{
+        display: none;
+    }
+
+    .navbar-nav{
+        font-size:20px;
+        margin: 1rem auto;
+        gap: 10rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-link:hover{
+        transform: scale(1.2);
+    }
+
+}
+
+
 @media (min-width: 1400px) {
     #burg-container img{
         display: none;
     }
+
     .navbar-nav{
         font-size:20px;
-        margin: auto;
+        margin: 1rem auto;
         gap: 10rem;
+        padding-bottom: 1rem;
     }
 
     .nav-link:hover{
-        transform: scale(1.5);
-    }
-}
-
-@media (min-width: 576px) {
-    #burg-container img{
-        display: none;
-    }
-    .navbar-nav{
-        font-size:20px;
-        margin: auto;
-        gap: 10rem;
+        transform: scale(1.2);
     }
 
-    .nav-link:hover{
-        transform: scale(1.5);
-    }
 }
+
