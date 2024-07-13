@@ -44,20 +44,42 @@
       </nav>
 
     <div class="container" id="fullWidth">
-        <div id="hero-image">
-            <img :src="heroImage.QuweinImage" alt="Image Of Quwein" class="img-fluid">
-        </div>
+        
+      <div id="contactMe">
+        <h1 class="display-1">{{title.heroTitle}}</h1>
+    </div>
 
+    <div class="d-inline-flex p-2" id="contactInfo">
+      <div class="contact-container">
+        <img :src="contactMe.email" alt="Email Icon">
+        <p>{{contactMe.emailText}}</p>
+      </div>
+      <div class="contact-container">
+        <img :src="contactMe.phone" alt="Phone Icon">
+        <p>{{contactMe.phoneText}}</p>
+      </div>
+    </div>
+    
         <div class="d-flex flex-row mb-3" id="media">
-            <img :src="socialMedia.facebook" class="img-fluid" alt="Facebook icon">
-            <img :src="socialMedia.linkedIn" class="img-fluid" alt="Linkedin icon">
-            <img :src="socialMedia.pinterest" class="img-fluid" alt="Pinterest icon">
+          <a class="link" :href="socialMedia.facebookLink" target="_blank">
+            <img :src="socialMedia.facebook" class="img-fluid" :href="socialMedia.facebookLink" alt="Facebook icon">
+          </a>
+          <a class="link" :href="socialMedia.tapasLink" target="_blank">
+            <img :src="socialMedia.tapas" class="img-fluid" alt="Tapas icon">
+          </a>
+          <a class="link" :href="socialMedia.instagramLink" target="_blank">
+            <img :src="socialMedia.instagram" class="img-fluid" alt="Instagram icon">
+          </a>
+          <a class="link" :href="socialMedia.tickTockLink" target="_blank">
+            <img :src="socialMedia.tickTock" class="img-fluid" alt="TickTok icon">
+          </a>
+          <a class="link" :href="socialMedia.youtubeLink" target="_blank">
             <img :src="socialMedia.youtube" class="img-fluid" alt="Youtube icon">
+          </a>
         </div>
 
-        <div id="contactMe">
-            <h1 class="display-1">{{title.heroTitle}}</h1>
-        </div>
+        
+        
     </div>
 
     <form class="form" action="" method="POST">
@@ -83,5 +105,4 @@
           </div>
           <button type="submit" style="margin: 1rem;" class="btn btn-primary">Send</button>
     </form>
-    
 </body>

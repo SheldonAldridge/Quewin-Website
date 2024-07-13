@@ -10,12 +10,15 @@
 }
 
 
-
 /*Burger Nav Menu*/
+@font-face {
+    font-family: 'onePiece';
+    src: url("/Resources/fonts/ONE_PIECE/one-piece-font.ttf") format('truetype');
+}
+
 .nav{
     display:block !important;
 }
-
 
 #burg-container img{
     width: 10%; 
@@ -82,7 +85,26 @@
     }
 
     .navbar-nav{
-        font-size:20px;
+        margin: 1rem auto;
+        gap: 10rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-link:hover{
+        background-color: var(--Celtic-Blue);
+        border-radius: 10px;
+        color: var(--white) !important;
+        font-family: 'onePiece';
+    }
+}
+
+@media (min-width: 1200px) {
+    #burg-container img{
+        display: none;
+    }
+
+    .navbar-nav{
+        font-size:18px;
         margin: 1rem auto;
         gap: 10rem;
         padding-bottom: 1rem;
@@ -90,10 +112,12 @@
 
     .nav-link:hover{
         transform: scale(1.2);
+        background-color: var(--Celtic-Blue);
+        border-radius: 10px;
+        color: var(--white) !important;
+        font-family: 'onePiece';
     }
-
 }
-
 
 @media (min-width: 1400px) {
     #burg-container img{
@@ -108,7 +132,11 @@
     }
 
     .nav-link:hover{
-        transform: scale(1.2);
+        transform: scale(1.5);
+        background-color: var(--Celtic-Blue);
+        border-radius: 10px;
+        color: var(--white) !important;
+        font-family: 'onePiece';
     }
 
 }
