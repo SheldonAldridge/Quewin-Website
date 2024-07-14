@@ -39,15 +39,11 @@ font-family: 'lato', sans-serif !important;
 #hero-image{
     text-align: center;
     width:auto;
-    height:200px;
-    overflow: hidden;
 }
 
 #hero-image img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    opacity: 0.5;
+    width:100vw;
+    height:auto;
 }
 
 #aboutMe{
@@ -69,14 +65,12 @@ font-family: 'lato', sans-serif !important;
 
 #skills-set h3{
     color: var(--white);
+    margin-top: 1rem;
+    font-size: 18px;
 }
 
 #skills-set{
     --bs-gutter-x: 0rem !important;
-}
-
-#skills-set h3{
-    margin-top: 1rem;
 }
 
 #d-none{
@@ -118,4 +112,236 @@ font-family: 'lato', sans-serif !important;
     text-align: center;
     justify-content: center;
     font-family: 'Lato',sans-serif !important;
+}
+
+#header-gap{
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
+}
+
+#carouselExampleCaptions,#carouselExampleIndicators{
+    width: 100%;
+}
+
+@media screen and (min-width:576px){
+    #fullWidth,.container{
+       width:100% !important;
+    }
+
+    .professional p,.journey-head p,#skills-head p{
+        font-size:20px;
+    }
+
+    .journey-head h1,#skills-set h1,#aboutMe h1{
+        font-size:50px;
+    }
+
+    #skills-set h3{
+        font-size:25px;
+    }
+
+    .skill-flex{
+        display: block;
+        max-width: 100%;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    #tools-heading-hide{
+        display: none;
+    }
+
+    #header-gap{
+        width: 100%;
+        justify-content: center;
+        gap: 15%;
+    }
+
+    #carouselExampleCaptions,#carouselExampleIndicators{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    #fullWidth,.container{
+       width:100% !important;
+    }
+
+    .professional p,.journey-head p,#skills-head p{
+        font-size:20px;
+    }
+
+    .journey-head h1,#skills-set h1,#aboutMe h1{
+        font-size:50px;
+    }
+
+    #skills-set h3{
+        font-size:30px;
+    }
+
+    .skill-flex{
+        display: block;
+        max-width: 100%;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    #tools-heading-hide{
+        display: none;
+    }
+
+    #header-gap{
+        width: 100%;
+        justify-content: center;
+        gap: 20%;
+    }
+
+    #carouselExampleCaptions,#carouselExampleIndicators{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:992px){
+    #fullWidth,.container{
+       width:100% !important;
+    }
+
+    .professional p,.journey-head p,#skills-head p{
+        font-size:20px;
+    }
+
+    .journey-head h1,#skills-set h1,#aboutMe h1{
+        font-size:50px;
+    }
+
+    #skills-set h3{
+        font-size:30px;
+    }
+
+    .skill-flex{
+        display: block;
+        max-width: 100%;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    #tools-heading-hide{
+        display: none;
+    }
+
+    #header-gap{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #carouselExampleCaptions,#carouselExampleIndicators{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #fullWidth,.container{
+       width:80% !important;
+    }
+
+    .professional p,.journey-head p,#skills-head p{
+        font-size:20px;
+    }
+
+    .journey-head h1,#skills-set h1,#aboutMe h1{
+        font-size:50px;
+    }
+
+    #skills-set h3{
+        font-size:40px;
+    }
+
+    .skill-flex{
+        display: block;
+        max-width: 100%;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    #tools-heading-hide{
+        display: none;
+    }
+
+    #header-gap{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #carouselExampleCaptions,#carouselExampleIndicators{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1400px){
+    #fullWidth,.container{
+       width:50% !important;
+    }
+
+    .professional p,.journey-head p,#skills-head p{
+        font-size:20px;
+    }
+
+    .journey-head h1,#skills-set h1,#aboutMe h1{
+        font-size:50px;
+    }
+
+    #skills-set h3{
+        font-size:30px;
+    }
+
+    .skill-flex{
+        display: block;
+        max-width: 100%;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    .d-inline-flex{
+        display: flex;
+    }
+
+    #tools-heading-hide{
+        display: none;
+    }
+
+    #header-gap{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #carouselExampleCaptions,#carouselExampleIndicators{
+        width: 50%;
+    }
 }

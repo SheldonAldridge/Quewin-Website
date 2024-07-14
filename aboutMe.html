@@ -27,10 +27,10 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">{{listNavObj.home}}</a>
+                <a class="nav-link " href="./index.html">{{listNavObj.home}}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./aboutMe.html">{{listNavObj.aboutMe}}</a>
+                <a class="nav-link active" id="active" aria-current="page" href="#">{{listNavObj.aboutMe}}</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./Portfolio.html">{{listNavObj.portfolio}}</a>
@@ -69,8 +69,13 @@
             <div id="skills-set">
                 <div class="container-sm container-md">
                     <h1 class="display-1">Skills</h1>
-                    <h3 class="display-6">Traditional Art Tools</h3>
-                    
+
+                  <div class="d-inline-flex p-2" id="header-gap">
+                    <h3 class="display-6" id="tools-heading">Traditional Art Tools</h3>
+                    <h3 class="display-6" id="tools-heading">Digital Art Tools</h3>
+                  </div>
+
+                  <div class="d-inline-flex p-2" id="slid-gap">
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -122,56 +127,8 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
-
-                <div class="skill-flex">
-                    <div class="skill-background">
-                        <img :src="skills.pensImage" alt="Pen Icons" class="penIcon">
-                    </div>
-                    <div class="skill-text-background">
-                        <h1 class="display-6" id="Lato-text">{{skills.pens}}</h1>
-                    </div>
-                </div>
-
-                <div class="skill-flex">
-                    <div class="skill-background">
-                        <img :src="skills.pencilImage" alt="Pencil Icons">
-                    </div>
-                    <div class="skill-text-background">
-                        <h1 class="display-6" id="Lato-text">{{skills.pencil}}</h1>
-                    </div>
-                </div>
-
-                <div class="skill-flex">
-                    <div class="skill-background">
-                        <img :src="skills.markerImage" alt="Marker Icons">
-                    </div>
-                    <div class="skill-text-background">
-                        <h1 class="display-6" id="Lato-text">{{skills.marker}}</h1>
-                    </div>
-                </div>
-
-                <div class="skill-flex">
-                    <div class="skill-background">
-                        <img :src="skills.paintbrushImage" alt="Paintbrush Icons">
-                    </div>
-                    <div class="skill-text-background">
-                        <h1 class="display-6" id="Lato-text">{{skills.paintbrush}}</h1>
-                    </div>
-                </div>
-
-                <div class="skill-flex">
-                    <div class="skill-background">
-                        <img :src="skills.inkImage" alt="Ink Icons" class="inkIcon">
-                    </div>
-                    <div class="skill-text-background">
-                        <h1 class="display-6" id="Lato-text">{{skills.ink}}</h1>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="display-6">Digital Art Tools</h3>
-
+                  </div>
+            
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -198,38 +155,10 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-
-            <div class="skill-flex">
-                <div class="skill-background">
-                    <img :src="skills.photoshopImage" alt="photoshop Icons">
-                </div>
-                <div class="skill-text-background">
-                    <h1 class="display-6" id="Lato-text">{{skills.photoshop}}</h1>
-                </div>
             </div>
-
-            <div class="skill-flex">
-                <div class="skill-background">
-                    <img :src="skills.sketchbookImage" alt="sketchbook Icons">
-                </div>
-                <div class="skill-text-background">
-                    <h1 class="display-6" id="Lato-text">{{skills.sketchbook}}</h1>
-                </div>
-            </div>
-
-            <div class="skill-flex">
-                <div class="skill-background">
-                    <img :src="skills.flipaclipImage" alt="FlipaClip Icons">
-                </div>
-                <div class="skill-text-background">
-                    <h1 class="display-6" id="Lato-text">{{skills.flipaclip}}</h1>
-                </div>
-            </div>
-
         </div>
+      </div>
     </div>
-
     </section>
-
 </body>
 </html>

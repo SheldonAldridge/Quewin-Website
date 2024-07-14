@@ -2,7 +2,7 @@ const heroImage = Vue.createApp({
   data() {
     return {
       heroImage: {
-        QuweinImage:"./Resources/Images/Quewin Images/69543088-01f5-4102-9bde-d2420736d14d.jpg",
+        QuweinImage:"./Resources/Images/Quewin Images/Quwen_1200px_tinted_blue.png",
       },
     };
   },

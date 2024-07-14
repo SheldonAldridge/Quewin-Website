@@ -53,6 +53,10 @@
     text-align: left;
 }
 
+#active{
+    color: var(--Alizarin-Crimson) !important;
+}
+
 /*Nav list Items*/
 
 /*Burger Menu Animations*/
