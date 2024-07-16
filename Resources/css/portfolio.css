@@ -13,6 +13,7 @@ body{
     --Alizarin-Crimson: #E62C39;
     --Crayolas-Outer-Space: #2E333F;
     --Crayolas-Gold: #DFC18A;
+    --white:#ffff;
 }
 
 @font-face {
@@ -23,6 +24,13 @@ body{
 .nav h5,nav-item h5{
     font-family: 'onePiece' !important;
 }
+
+.btn{
+    background-color: var(--Crayolas-Gold) !important;
+    border: transparent !important;
+    color: var(--Alizarin-Crimson) !important;
+    --bs-btn-padding-x:0 !important;
+};
 
 /*Burger Nav Menu*/
 
@@ -47,6 +55,10 @@ body{
 #burg-container h5{
     margin: 0 auto;
     
+}
+
+.navbar>.container-fluid{
+    display: block !important;
 }
 
 .navbar{
@@ -81,7 +93,7 @@ body{
     position: relative !important;
     z-index:1 !important;
 }
-.nav-item a{
+.nav-item a,.btn{
     color: var(--Crayolas-Outer-Space) !important;
 }
 
@@ -172,3 +184,181 @@ body{
 /*Grid Gallery Transition*/
 
 /*Grid Gallery Mobile*/
+@media screen and (min-width:576px){
+ .btn{
+    font-size: 20px !important;
+ }
+    
+    .dropdown-menu a:hover{
+        cursor: pointer;
+        color: var(--white) !important;
+        background-color: var(--Celtic-Blue) !important;
+        font-family: 'onePiece' !important;
+
+    }
+    
+    .row{
+        margin: auto !important;
+        width: 70% !important;
+    }
+    
+    .column{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: auto;
+    }
+    
+    .column img{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+       
+    }
+    
+    .column-one img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:768px){
+   
+    .dropdown-menu a:hover{
+        cursor: pointer;
+        color: var(--white) !important;
+        background-color: var(--Celtic-Blue) !important;
+        font-family: 'onePiece' !important;
+
+    }
+    
+    .row{
+        margin: auto !important;
+        width: 70% !important;
+    }
+    
+    .column{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: auto;
+    }
+    
+    .column img{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+       
+    }
+    
+    .column-one img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:992px){
+    
+    .row{
+        margin: auto !important;
+        width: 70% !important;
+    }
+    
+    .column{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: auto;
+    }
+    
+    .column img{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+       
+    }
+    
+    .column-one img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:1200px){
+  
+    
+    .dropdown-menu a:hover{
+        cursor: pointer;
+        color: var(--white) !important;
+        background-color: var(--Celtic-Blue) !important;
+        font-family: 'onePiece' !important;
+        font-size: 20px;
+    }
+    
+    .row{
+        margin: auto !important;
+        width: 70% !important;
+    }
+    
+    .column{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: auto;
+    }
+    
+    .column img{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+       
+    }
+    
+    .column-one img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:1400px){
+
+
+
+
+.dropdown-menu a:hover{
+    cursor: pointer;
+    color: var(--white) !important;
+    background-color: var(--Celtic-Blue) !important;
+    font-family: 'onePiece' !important;
+    font-size: 20px;
+}
+
+.row{
+    margin: auto !important;
+    width: 70% !important;
+}
+
+.column{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.column img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+   
+}
+
+.column-one img{
+    width: 100%;
+    height: auto;
+}
+}

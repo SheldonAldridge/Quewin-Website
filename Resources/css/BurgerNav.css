@@ -20,11 +20,13 @@
     display:block !important;
 }
 
+
 #burg-container img{
     width: 10%; 
 }
 
 #burger-nav{
+    
     background-color: var(--Crayolas-Gold);
 }
 
@@ -83,6 +85,56 @@
 }
 /*Burger Menu Animations*/
 
+@media (min-width: 576px) {
+    #burg-container img{
+        display: none;
+    }
+
+    .navbar-nav{
+        margin: 1rem auto;
+        gap: 10rem;
+        padding-bottom: 1rem;
+    }
+
+    .active:hover{
+        background-color: transparent !important;
+        transform: scale(1) !important;
+        font-family: var(--bs-body-font-family) !important;
+    }
+
+    .nav-link:hover{
+        background-color: var(--Celtic-Blue);
+        border-radius: 10px;
+        color: var(--white) !important;
+        font-family: 'onePiece';
+    }
+}
+
+@media (min-width: 768px) {
+    #burg-container img{
+        display: none;
+    }
+
+    .navbar-nav{
+        margin: 1rem auto;
+        gap: 10rem;
+        padding-bottom: 1rem;
+    }
+
+    .active:hover{
+        background-color: transparent !important;
+        transform: scale(1) !important;
+        font-family: var(--bs-body-font-family) !important;
+    }
+
+    .nav-link:hover{
+        background-color: var(--Celtic-Blue);
+        border-radius: 10px;
+        color: var(--white) !important;
+        font-family: 'onePiece';
+    }
+}
+
 @media (min-width: 992px) {
     #burg-container img{
         display: none;
@@ -92,6 +144,12 @@
         margin: 1rem auto;
         gap: 10rem;
         padding-bottom: 1rem;
+    }
+
+    .active:hover{
+        background-color: transparent !important;
+        transform: scale(1) !important;
+        font-family: var(--bs-body-font-family) !important;
     }
 
     .nav-link:hover{
@@ -114,6 +172,12 @@
         padding-bottom: 1rem;
     }
 
+    .active:hover{
+        background-color: transparent !important;
+        transform: scale(1) !important;
+        font-family: var(--bs-body-font-family) !important;
+    }
+
     .nav-link:hover{
         transform: scale(1.2);
         background-color: var(--Celtic-Blue);
@@ -128,6 +192,10 @@
         display: none;
     }
 
+    .navbar>.container{
+        display: block !important;
+    }
+
     .navbar-nav{
         font-size:20px;
         margin: 1rem auto;
@@ -135,7 +203,14 @@
         padding-bottom: 1rem;
     }
 
+    .active:hover{
+        background-color: transparent !important;
+        transform: scale(1) !important;
+        font-family: var(--bs-body-font-family) !important;
+    }
+
     .nav-link:hover{
+        
         transform: scale(1.5);
         background-color: var(--Celtic-Blue);
         border-radius: 10px;

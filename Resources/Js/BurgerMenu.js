@@ -8,10 +8,15 @@ const nav = Vue.createApp({
 
          listNavObj: {
             home: 'Home',
-            portfolio: 'Portfolio',
-            aboutMe:"About Me",
+            aboutMe: 'About Me',
+            portfolio:'Portfolio',
             contactMe: 'Contact Me'
          },
+
+         projectTitleObj:{
+            digitalArt: 'Digital Art Work',
+            traditionalArt: 'Traditional Art Work',
+        },
 
           //Toggle Burger Menu Images
          ShowBurgerMen: true,
@@ -26,6 +31,8 @@ const nav = Vue.createApp({
 
          //Menu list slide down animation
          slideDown: true,
+
+         ShowDigArt: true,
       }
    },
 
@@ -50,6 +57,16 @@ const nav = Vue.createApp({
       toggleSlideDown(){
          this.slideDown = !this.slideDown
       },
+
+      toggleDigArt() {
+         this.ShowDigArt = true,
+         this.ShowTradArt = false
+       },
+
+       toggleTradArt() {
+         this.ShowDigArt = false,
+         this.ShowTradArt = true
+       },
    },
 
     
