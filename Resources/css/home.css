@@ -543,3 +543,53 @@ body{
 /*Glitch Animation*/
 
 /*Glitch*/
+
+@media screen and (min-width:576px){
+    .glitch img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .layers{
+        font-size: 100px;
+    }
+
+    .h-line{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .glitch img{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .layers{
+        font-size: 120px;
+    }
+
+    .h-line{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px){
+
+    .glitch,.glitch__layers{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .layers{
+        font-size: 120px;
+    }
+
+    .h-line{
+        width: 100%;
+    }
+}
+
