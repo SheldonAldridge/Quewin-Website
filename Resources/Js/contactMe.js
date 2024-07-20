@@ -28,7 +28,7 @@
         socialMedia:{
           facebook:"/Resources/Images/Contact_Page_Images/facebook.png",
           facebookLink:"https://m.facebook.com/quewin.fortuin/",
-          tapas:"/Resources/Images/Contact_Page_Images/tapas.png",
+          tapas:"/Resources/Images/Contact_Page_Images/Tapas.png",
           tapasLink:"https://m.tapas.io/quewinty777",
           instagram:"/Resources/Images/Contact_Page_Images/Instagram.png",
           instagramLink:"https://www.instagram.com/wolfyque_art777/",
