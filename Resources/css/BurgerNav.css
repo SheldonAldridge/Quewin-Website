@@ -128,7 +128,10 @@
         margin: 1rem auto;
         gap: 10rem;
         padding-bottom: 1rem;
-        font-size: 15px;
+    }
+
+    .nav-link{
+        font-size: 15px !important;
     }
 
     .active:hover{
@@ -140,8 +143,13 @@
     .nav-link:hover{
         background-color: var(--Celtic-Blue);
         border-radius: 10px;
+        width: auto !important;
         color: var(--white) !important;
         font-family: 'onePiece';
+    }
+
+    #text-size:hover{
+        font-size: 15px !important;
     }
 }
 
