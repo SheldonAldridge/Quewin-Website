@@ -260,19 +260,19 @@ font-family: 'lato', sans-serif !important;
 
 @media screen and (min-width:1200px){
     #fullWidth,.container{
-       width:80% !important;
+       width:60% !important;
     }
 
     .professional p,.journey-head p,#skills-head p{
-        font-size:20px;
+        font-size:16px;
     }
 
     .journey-head h1,#skills-set h1,#aboutMe h1{
-        font-size:50px;
+        font-size:30px;
     }
 
     #skills-set h3{
-        font-size:40px;
+        font-size:25px;
     }
 
     .skill-flex{
@@ -295,6 +295,10 @@ font-family: 'lato', sans-serif !important;
     #header-gap{
         width: 100%;
         justify-content: center;
+    }
+
+    #slid-gap{
+        margin: auto;
     }
 
     #carouselExampleCaptions,#carouselExampleIndicators{
