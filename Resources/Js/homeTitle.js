@@ -15,6 +15,9 @@ const canvas = Vue.createApp({
              firstName: "Quewin",
              lastName: "Fortune"
           },
+          subHead:{
+            subheading:'View my design work'
+          },
        }
     },
  });

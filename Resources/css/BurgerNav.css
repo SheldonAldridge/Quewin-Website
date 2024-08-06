@@ -136,7 +136,6 @@
 
     .active:hover{
         background-color: transparent !important;
-        transform: scale(1) !important;
         font-family: var(--bs-body-font-family) !important;
     }
 
@@ -146,11 +145,10 @@
         width: auto !important;
         color: var(--white) !important;
         font-family: 'onePiece';
+        word-spacing: pre !important;
     }
 
-    #text-size:hover{
-        font-size: 15px !important;
-    }
+    
 }
 
 @media (min-width: 1200px) {

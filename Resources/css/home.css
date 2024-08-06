@@ -89,7 +89,7 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -123,13 +123,19 @@ body{
     margin-left:1em;
 }
 
+.btn-link{
+    color: var(--white) !important;
+    text-decoration: none !important;
+    background-color: var(--Crayolas-Outer-Space) !important;
+}
+
 /*Title*/
 
 /*Glitch*/
 
 .glitch {
     max-width: 100%;
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 }
 
@@ -151,7 +157,6 @@ body{
 	right: 0;
 	top: 0;
 	bottom: 0;
-    
 }
 
 .glitch__layer{
@@ -552,11 +557,26 @@ body{
 
 /*Glitch*/
 
+@media screen and (max-height:500px){
+    #title{
+        transform: translate(-50%,0%);
+    }
+}
+
 @media screen and (min-width:576px){
 
     .h-line{
         width: 100%;
     }
+
+    .f-name,.l-name{
+        font-size: 100px;
+    }
+
+    .btn-link{
+        font-size: 30px !important;
+    }
+
 }
 
 @media screen and (min-width:768px){
@@ -567,6 +587,14 @@ body{
 
     .h-line{
         width: 100%;
+    }
+
+    .f-name,.l-name{
+        font-size: 150px !important;
+    }
+
+    .btn-link{
+        font-size: 40px !important;
     }
 }
 
@@ -588,6 +616,12 @@ body{
     .h-line{
         width: 100%;
     }
+    
+
+    .btn-link{
+        font-size: 20px !important;
+    }
+    
 }
 
 @media screen and (min-width:1200px){
@@ -603,10 +637,6 @@ body{
 
 @media screen and (min-width:1400px){
 
-    #title{
-        top: 60% !important;
-    }
-
     .display1,.layers{
         font-size: 150px !important;
     }
@@ -614,5 +644,9 @@ body{
 
     .h-line{
         width: 100%;
+    }
+
+    .btn-link{
+        font-size: 35px !important;
     }
 }
