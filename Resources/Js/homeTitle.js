@@ -8,15 +8,13 @@ const canvas = Vue.createApp({
            },
 
           groundObj:{
-             background:"./Resources/Images/Images - artwork/MyWork.png"
+             background:"./Resources/Images/Images - artwork/MyWork.png",
           },
 
           titleObj:{
              firstName: "Quewin",
-             lastName: "Fortune"
-          },
-          subHead:{
-            subheading:'View my design work'
+             lastName: "Fortune",
+             subheading:'View my design work',
           },
        }
     },
