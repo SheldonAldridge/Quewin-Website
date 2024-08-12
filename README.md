@@ -1,7 +1,7 @@
 # Why Build The Website
 The website was created to showcase the exceptional digital and traditional artwork of Quewin's talent. Recognizing the quality and talent displayed in their creations, the primary goal was to establish a professional portfolio that goes beyond a traditional CV.
 
-By hosting their work online, the intention is to provide prospective employers and collaborators with a comprehensive view of their artistic abilities, style, and versatility. This platform not only promotes their artwork but also offers insights into their personality and creative identity, thus complementing the formal aspects of their resume.
+By hosting their work online, the intention is to provide prospective employers and collaborators with a comprehensive view of their artistic abilities, style, and versatility. This website not only promotes their artwork but also offers insights into their personality and creative identity, thus complementing the formal aspects of their resume.
 
 Additionally, the website serves as a centralized hub where interested parties can easily view samples of their work, learn more about their background and artistic journey, and find contact information for further engagement. Ultimately, it aims to enhance their visibility in the industry and strengthen their professional presence in the digital space.
 
