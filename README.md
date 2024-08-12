@@ -5,19 +5,19 @@ By hosting their work online, the intention is to provide prospective employers 
 
 Additionally, the website serves as a centralized hub where interested parties can easily view samples of their work, learn more about their background and artistic journey, and find contact information for further engagement. Ultimately, it aims to enhance their visibility in the industry and strengthen their professional presence in the digital space.
 
-#@ Technology Stacks Used
+### Technology Stacks Used
 - HTML 5
 - CSS 3
 - Javascript
 - Bootstrap 5
 - Vue JS
 
-## Choice of Frameworks
+### Choice of Frameworks
 For this project, I opted to utilize Bootstrap and Vue.js for specific reasons that cater to efficiency and industry standards.
 
-## Bootstrap
+### Bootstrap
 Bootstrap was selected to streamline the development of the website's foundational structure. Its robust framework provided a comprehensive toolkit that facilitated rapid prototyping and ensured a responsive and visually cohesive design.
 
-## Vue.js
+### Vue.js
 Vue.js was chosen as it stands out as a widely adopted framework within the industry. This project presented an ideal opportunity to gain hands-on experience with Vue.js, 
 leveraging its flexibility and component-based architecture to enhance interactivity and user experience.
